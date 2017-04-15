@@ -2,14 +2,15 @@ import express from 'express';
 import React from 'react';
 import ReactDom from 'react-dom/server';
 import App from './App/start/App';
-import renderHTML from './renderHTML';
+import HtmlLayout from './HtmlLayout';
 
 const app = express();
 const tickets = require('../api/tickets.json');
 
 app.get('/', (req, res) => {
-  const componentHTML = ReactDom.renderToString(<App />);
-  return res.end(renderHTML(componentHTML));
+  const content = ReactDom.renderToString(<App />);
+  const html = `<!DOCTYPE html>${ReactDom.renderToStaticMarkup(<HtmlLayout content={content} />)}`;
+  res.send(html);
 });
 
 app.get('/api/tickets', (req, res) => {
