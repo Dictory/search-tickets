@@ -3,12 +3,11 @@ global.Promise = require('bluebird');
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const productionBuild = process.env.NODE_ENV === 'production';
 const nodeEnv = productionBuild ? 'production' : 'development';
 
-const sourcePath = path.join(__dirname, './src');
+const sourcePath = path.resolve(__dirname, 'src', 'App');
 const publicPath = 'http://localhost:8050/public/assets';
 const cssName = productionBuild ? 'styles-[hash].css' : 'styles.css';
 const jsName = productionBuild ? 'bundle-[hash].js' : 'bundle.js';
@@ -27,15 +26,13 @@ if (productionBuild) {
   plugins.push(new webpack.optimize.DedupePlugin());
   plugins.push(new webpack.optimize.OccurenceOrderPlugin());
 } else {
-  plugins.push(
-    new webpack.HotModuleReplacementPlugin()
-  );
+  plugins.push(new webpack.HotModuleReplacementPlugin());
 }
 
 module.exports = {
   devtool: productionBuild ? 'source-map' : 'eval',
   context: sourcePath,
-  entry  : './client.jsx',
+  entry  : '../client.jsx',
   plugins,
   output: {
     path    : `${__dirname}/public/assets/`,
@@ -44,13 +41,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx'],
-    modules   : [
-      path.resolve(__dirname, 'node_modules'),
-      sourcePath,
-    ],
+    modules   : [path.resolve(__dirname, 'src', 'modules'), 'node_modules'],
     alias: {
-      '~': path.resolve(__dirname, 'src'),
-      'react/lib/ReactMount': 'react-dom/lib/ReactMount',
+      '~': path.resolve(__dirname, 'src', 'App'),
+      react: path.resolve('./node_modules/react'),
+      'react-dom': path.resolve('./node_modules/react-dom'),
     },
   },
   module: {

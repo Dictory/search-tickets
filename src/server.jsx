@@ -1,8 +1,8 @@
 import express from 'express';
 import React from 'react';
 import ReactDom from 'react-dom/server';
-import App from 'containers/App';
-import renderHTML from 'renderHTML';
+import App from './App/start/App';
+import renderHTML from './renderHTML';
 
 const app = express();
 const tickets = require('../api/tickets.json');
