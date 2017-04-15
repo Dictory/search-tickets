@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import ticketsStore from 'TicketsModule/reducers';
+import ticketsStore from '../../modules/TicketsModule/reducers';
 
 const rootReducer = combineReducers({
   ticketsStore,
