@@ -1,0 +1,25 @@
+{
+  "settings" : {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+  },
+  "parser": "babel-eslint",
+  "extends": "eslint-config-airbnb",
+  "rules": {
+    "generator-star-spacing": 0,
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/prefer-stateless-function": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/prop-types": "off",
+    "react/no-danger": "off",
+    "key-spacing": ["error", { "align": "colon" }],
+  }
+}
