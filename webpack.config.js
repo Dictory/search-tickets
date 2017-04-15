@@ -43,27 +43,23 @@ if (productionBuild) {
 
 module.exports = {
   entry: ['babel-polyfill', './src/client.js'],
-  debug: !productionBuild,
-  resolve: {
-    root              : path.join(__dirname, 'src'),
-    modulesDirectories: ['node_modules'],
-    extensions        : ['', '.js', '.jsx']
-  },
   plugins,
   output: {
     path: `${__dirname}/public/assets/`,
     filename: jsName,
     publicPath
   },
-  eslint: {
-    configFile: './.eslintrc',
+  resolve: {
+    alias: {
+      '~': path.resolve(__dirname, 'src')
+    }
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
         exclude: [/node_modules/],
-        loader:'babel!eslint-loader'
+        loader:'babel-loader!eslint-loader'
       },
       {
         test: /\.css$/,
@@ -76,7 +72,7 @@ module.exports = {
           },
           { loader: 'postcss-loader'}
         ]
-      }
+      },
       { test: /\.(jpg|gif|png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000' },
     ]
   },

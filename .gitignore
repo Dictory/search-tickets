@@ -1,6 +1,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*
-!/log/.keep
+/npm-debug.log
 /tmp
 /node_modules
 
