@@ -1,0 +1,11 @@
+$font-family-base: sans-serif;
+
+$wide: 1980px;
+$laptopL: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobileL: 425px;
+$mobile: 375px;
+
+@custom-media --middle-viewport (500px <= width <= 1224px);
+@custom-media --small-viewport (500px <= width <= 1200px);
