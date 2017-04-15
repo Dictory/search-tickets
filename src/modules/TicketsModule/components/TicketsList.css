@@ -1,0 +1,13 @@
+.box {
+  display: flex;
+  width: 620px;
+  max-width: 96%;
+  margin: 80px auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+}

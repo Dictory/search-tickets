@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
+import TicketsView from '../../modules/TicketsModule';
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <h1>Search tickets!</h1>
-      </div>
-    );
+    return <TicketsView />;
   }
 }
 

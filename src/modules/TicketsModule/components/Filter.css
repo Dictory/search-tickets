@@ -1,0 +1,11 @@
+.box {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.list {
+  background-color: #fff;
+  padding: 10px 8px;
+  box-shadow: 0 1 4 0 rgba(91, 137, 164, 0.25);
+  border-radius: 5px;
+}

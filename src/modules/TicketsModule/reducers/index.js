@@ -1,5 +1,5 @@
 import {
-  REQUEST, RESOLVE,
+  REQUEST, RECEIVE,
 } from '../constants';
 
 const ticketsStore = (state = {
@@ -9,7 +9,7 @@ const ticketsStore = (state = {
   switch (action.type) {
     case REQUEST:
       return { ...state, isFetching: true };
-    case RESOLVE:
+    case RECEIVE:
       return { ...state, isFetching: false, items: action.items };
     default:
       return state;
