@@ -31,6 +31,7 @@
     position: absolute 2px * * 5px;
     font-size: 10px;
     color: #3e9ce8;
+    opacity: 0;
     transition: opacity 0.3s;
   }
 

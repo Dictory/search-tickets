@@ -1,15 +1,20 @@
 import React from 'react';
-import map from 'lodash/map';
 import styles from './TicketsList.css';
 import Ticket from './Ticket.jsx';
+import NotFound from './NotFound.jsx';
+import inFilter from '../actions/inFilter';
 
-const TicketsList = ({ tickets, loading }) => {
-  const list = map(tickets, (ticket, i) => <Ticket key={i} item={ticket} />);
+const TicketsList = ({ tickets, loading, filter }) => {
+  const listFiltered = tickets.filter(ticket => inFilter(filter, ticket.get('stops')));
+  const list = listFiltered.entrySeq().map(([key, ticket]) => <Ticket key={key} item={ticket.toJS()} />);
+  const element = listFiltered.size > 0
+    ? list
+    : <NotFound />
   return (
     <div className={styles.list}>
-      { loading && tickets.length > 0
+      { loading
         ? <div>...loading</div>
-        : list
+        : element
       }
     </div>
   );

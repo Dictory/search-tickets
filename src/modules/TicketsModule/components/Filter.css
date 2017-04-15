@@ -10,7 +10,6 @@ $offset: 15px;
   padding: 15px 0;
   box-shadow: 0 1px 4px 0 rgba(91, 137, 164, 0.25);
   border-radius: 5px;
-  margin-top: 10px;
 }
 
 .title {
@@ -55,6 +54,7 @@ $offset: 15px;
   color: $color;
   text-transform: uppercase;
   transition: color 0.3s, opacity 0.3s;
+  cursor: pointer;
 
   &:hover {
     color: color($color l(+10%));
