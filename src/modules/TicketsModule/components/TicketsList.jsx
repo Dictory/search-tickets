@@ -5,7 +5,6 @@ import Ticket from './Ticket.jsx';
 
 const TicketsList = ({ tickets, loading }) => {
   const list = map(tickets, (ticket, i) => <Ticket key={i} item={ticket} />);
-  console.log(tickets);
   return (
     <div className={styles.list}>
       { loading && tickets.length > 0

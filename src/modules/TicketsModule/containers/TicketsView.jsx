@@ -10,6 +10,7 @@ class TicketsView extends Component {
     this.props.dispatch(load());
   }
   getFilters = () => [
+    { value: 'all', label: 'Все' },
     { value: 0, label: 'Без пересадок' },
     { value: 1, label: '1 пересадка' },
     { value: 2, label: '2 пересадки' },

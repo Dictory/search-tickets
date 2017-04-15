@@ -1,0 +1,40 @@
+.box {
+  size: 20px;
+  position: relative;
+  margin-right: 10px;
+
+  input[type=checkbox] {
+    visibility: hidden;
+
+    &:checked + .label {
+      background-color: #f2fdff;
+      border-color: #3e9ce8;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.label {
+  size: 20px;
+  cursor: pointer;
+  position: absolute 0 * * 0;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #d3d5d6;
+  transition: background-color 0.3s border-color 0.3s;
+
+  &::after {
+    content: '✔';
+    position: absolute 2px * * 5px;
+    font-size: 10px;
+    color: #3e9ce8;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 0.5;
+  }
+}

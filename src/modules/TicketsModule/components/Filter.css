@@ -1,11 +1,62 @@
-.box {
+$offset: 15px;
+
+.wrapper {
   width: 230px;
   flex-shrink: 0;
 }
 
-.list {
+.box {
   background-color: #fff;
-  padding: 10px 8px;
-  box-shadow: 0 1 4 0 rgba(91, 137, 164, 0.25);
+  padding: 15px 0;
+  box-shadow: 0 1px 4px 0 rgba(91, 137, 164, 0.25);
   border-radius: 5px;
+  margin-top: 10px;
+}
+
+.title {
+  padding: 0 $offset;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px $offset;
+  font-size: 13px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #f1fcff;
+
+    .only {
+      opacity: 1;
+    }
+  }
+}
+
+.button {
+  display: flex;
+}
+
+.only {
+  $color: #3e9ce8;
+
+  opacity: 0;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 11px;
+  color: $color;
+  text-transform: uppercase;
+  transition: color 0.3s, opacity 0.3s;
+
+  &:hover {
+    color: color($color l(+10%));
+  }
 }
