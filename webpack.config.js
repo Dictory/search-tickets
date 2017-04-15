@@ -53,7 +53,7 @@ module.exports = {
       {
         test   : /\.(js|jsx)$/,
         exclude: [/node_modules/],
-        loader : productionBuild ? 'babel-loader' : 'react-hot-loader!babel-loader!eslint-loader',
+        loader : productionBuild ? 'babel-loader' : 'react-hot-loader!babel-loader',
       },
       {
         test   : /\.css$/,
