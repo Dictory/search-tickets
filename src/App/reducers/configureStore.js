@@ -10,8 +10,8 @@ const configureStore = (initialState) => {
     ),
   );
 
-  const store = createStoreWithMiddleware(createStore)(rootReducer, initialState,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()); //eslint-disable-line
+  const store = createStoreWithMiddleware(createStore)(rootReducer, initialState)
+    // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()); //eslint-disable-line
   return store;
 };
 
