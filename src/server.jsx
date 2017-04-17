@@ -4,15 +4,8 @@ import ReactDom from 'react-dom/server';
 import App from './App/start/App';
 import HtmlLayout from './HtmlLayout';
 
-const productionBuild = process.env.NODE_ENV === 'production';
-
 const app = express();
 const tickets = require('../api/tickets.json');
-
-const cssName = productionBuild ? 'styles-[hash].css' : 'styles.css';
-require('css-modules-require-hook')({
-  generateScopedName: cssName,
-});
 
 app.get('/', (req, res) => {
   const content = ReactDom.renderToString(<App />);
