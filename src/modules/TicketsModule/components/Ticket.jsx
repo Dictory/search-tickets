@@ -1,7 +1,7 @@
 import React from 'react';
 import dateFormat from 'dateformat';
 import Button from './Button';
-import styles from './Ticket.css';
+import './Ticket.css';
 
 dateFormat.i18n = {
   dayNames: [
@@ -33,28 +33,28 @@ const Ticket = ({
     price,
   },
 }) => (
-  <div className={styles.box}>
-    <div className={styles.left}>
-      <div className={styles.logo} />
+  <div styleName="box">
+    <div styleName="left">
+      <div styleName="logo" />
       <Button price={price} />
     </div>
-    <div className={styles.right}>
-      <div className={styles.path}>
-        <div className={styles.pathOrigin}>{toTime(departureTime)}</div>
-        <div className={styles.pathBox}>
-          {stops > 0 && <div className={styles.stopsCount}>{getStopsString(stops)}</div>}
-          <div className={styles.pathLine} />
+    <div styleName="right">
+      <div styleName="path">
+        <div styleName="pathOrigin">{toTime(departureTime)}</div>
+        <div styleName="pathBox">
+          {stops > 0 && <div styleName="stopsCount">{getStopsString(stops)}</div>}
+          <div styleName="pathLine" />
         </div>
-        <div className={styles.pathArrival}>{toTime(arrivalTime)}</div>
+        <div styleName="pathArrival">{toTime(arrivalTime)}</div>
       </div>
-      <div className={styles.info}>
+      <div styleName="info">
         <div>
-          <div className={styles.infoMain}>{`${origin}, ${originName}`}</div>
-          <div className={styles.infoSub}>{getDate(departureDate)}</div>
+          <div styleName="infoMain">{`${origin}, ${originName}`}</div>
+          <div styleName="infoSub">{getDate(departureDate)}</div>
         </div>
-        <div className={styles.infoArrival}>
-          <div className={styles.infoMain}>{`${destinationName}, ${destination}`}</div>
-          <div className={styles.infoSub}>{getDate(arrivalDate)}</div>
+        <div styleName="infoArrival">
+          <div styleName="infoMain">{`${destinationName}, ${destination}`}</div>
+          <div styleName="infoSub">{getDate(arrivalDate)}</div>
         </div>
       </div>
     </div>

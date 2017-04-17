@@ -1,25 +1,329 @@
+._12VdBFc4B5AkDuiQFsuFzK {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 820px;
+  max-width: 96%;
+  margin: 80px auto;
+}
+
+._2OBuRlsBjgGZPVnIdBFwNj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+}
+._2g9OCSFtYJlHQXDmsJfFLo {
+
+  margin-top: 10px;
+  background-color: #ff6d00;
+  box-shadow: 0 1px 0 0 #d64d08, 0 2px 1px 0 rgba(0, 0, 0, .1);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s
+}
+._2g9OCSFtYJlHQXDmsJfFLo:hover {
+
+  background-color: rgb(255, 139, 51);
+
+  box-shadow: 0 1px 0 0 #d64d08, 0 1px 5px 0 rgba(0, 0, 0, .25)
+}
+._2g9OCSFtYJlHQXDmsJfFLo:active {
+
+  background-color: rgb(204, 88, 0)
+}
+._3B4BWWrsXri2UJ0yX1B8oj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(91, 137, 164, .25);
+  border-radius: 5px;
+  transition: box-shadow 0.3s
+}
+
+._3B4BWWrsXri2UJ0yX1B8oj + ._3B4BWWrsXri2UJ0yX1B8oj {
+  margin-top: 20px
+}
+
+._3B4BWWrsXri2UJ0yX1B8oj:hover {
+  box-shadow: 0 5px 25px 0 rgba(91, 137, 164, .1)
+}
+
+._27OQzGXECwIzgeseRIB5EH {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(90, 60, 173);
+}
+
+.fe8Izqja0ASzLd1Wgfgj5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  border-right: 1px solid #eceff1;
+  padding: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.c-cKI26hKOa4v_7iy6_zW {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+._3TSznRRwCekfx_JlXNs09C, .dn-KHZoqKKzUj75H9AaCJ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.klgrZyrImlTeCUGDIJpLr, ._34savGsxmKEPh9LW5lqgRY {
+  font-size: 32px;
+}
+
+._34savGsxmKEPh9LW5lqgRY, ._1xtkV8uKMEAhKtkTSUVFB4 {
+  text-align: right;
+}
+
+._1wLsHEI6KmuNyp3DHRH9k {
+  color: #8b9497;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+._32E-Tl9ytd1zvNPbgz0c2Q {
+  width: 100%;
+  padding: 3px 20px;
+}
+
+._2diOUFe0RKJiYlRnuqb4ky {
+
+  width: calc(100% - 13px);
+  height: 1px;
+  background-color: #d2d5d6;
+  margin: 7px 0;
+  position: relative
+}
+
+._2diOUFe0RKJiYlRnuqb4ky::after {
+  content: '';
+  display: block;
+  top: -50%;
+  right: -15px;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAASlJREFUKBWNUrFKA0EQnbd3CJLOPmCn61kK9goawcLawh+wskppbSWIvfgBgoWgFjaxENske4uphICChRYaBMndc1dY2NwJerDMzHvz5u0OJxJ9JNOuyd961u5HcC1VMQJg7M4VKW1r7WzMxfmEyBNUuBByekwexo1xXhMljcalAIVz2+pbux43h1z1TH5vzMNqALJm8xXkna9LypEhpwIXIrrGnghkDZTTABJcEcqyryE4c2EQOJWgg36e77qJxwH8K7pFPaclseTGPf3bSaGTQrigmOxk2dxNcHHvvKUvgIHS89sZ8BW4HzgufG6Gw5ni/ePFrT1RCq1Fra+rPbWVF6PRhhcAcv6bwA+oiVBy013rMwX2qg6hnhD5f8+dlnM50Fo/hqZq/AaL+HF/fu2iqwAAAABJRU5ErkJggg==)
+}
+
+.dn-KHZoqKKzUj75H9AaCJ {
+  font-size: 12px;
+}
+
+._3FR5-w7o9IINO1D_cNSwTf {
+  color: #4a4a4a;
+}
+
+._2XWzcmrK9O4ajcwaLLrZMn {
+  color: #8b9497;
+}
+.qa-qNdV4GMOxknHHnuWPY {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 0 rgba(91, 137, 164, .25);
+  border-radius: 5px;
+}
+.Cd10VJdzzQUWj-HAtIqlh {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.Cd10VJdzzQUWj-HAtIqlh input[type=checkbox] {
+  visibility: hidden
+}
+
+.Cd10VJdzzQUWj-HAtIqlh input[type=checkbox]:checked + ._1HHx9C2PNiUOpJJxk4pysx {
+  background-color: #f2fdff;
+  border-color: #3e9ce8;
+}
+
+.Cd10VJdzzQUWj-HAtIqlh input[type=checkbox]:checked + ._1HHx9C2PNiUOpJJxk4pysx::after {
+  opacity: 1;
+}
+
+._1HHx9C2PNiUOpJJxk4pysx {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #d3d5d6;
+  transition: background-color 0.3s border-color 0.3s
+}
+
+._1HHx9C2PNiUOpJJxk4pysx::after {
+  content: '\2714';
+  top: 2px;
+  left: 5px;
+  position: absolute;
+  font-size: 10px;
+  color: #3e9ce8;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+._1HHx9C2PNiUOpJJxk4pysx:hover::after {
+  opacity: 0.5;
+}
+._3-uK5yeyvcJu6JED6l74I9 {
+  width: 230px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+._26Z3zzH2kYBUbEtSFGIU-A {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 1px 4px 0 rgba(91, 137, 164, .25);
+  border-radius: 5px;
+}
+
+._3-x6zF0mdHZY4mDvjWLTax {
+  padding: 0 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+._1E3Tzs_7ckatl2lsC1Vzh2 {
+  margin-top: 10px;
+}
+
+.j19M-RFiyBF9_x0sLYtPv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 15px;
+  font-size: 13px;
+  transition: background-color 0.3s
+}
+
+.j19M-RFiyBF9_x0sLYtPv:hover {
+  background-color: #f1fcff;
+}
+
+.j19M-RFiyBF9_x0sLYtPv:hover ._3i9QDIDhHiFOxWp05BwrIJ {
+  opacity: 1;
+}
+
+._2CVP8wjx5cTGaVppfcY1XU {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+._3i9QDIDhHiFOxWp05BwrIJ {
+
+  opacity: 0;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 11px;
+  color: #3e9ce8;
+  text-transform: uppercase;
+  transition: color 0.3s, opacity 0.3s;
+  cursor: pointer
+}
+
+._3i9QDIDhHiFOxWp05BwrIJ:hover {
+  color: rgb(109, 180, 238);
+}
 /*@import "normalize.css";*/
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215
+}
 /* stylelint-disable-line */
 html, body {}
 * {
     box-sizing: border-box
 }
 body {
-    color: #2e2e2e;
-    background-color: #f2f2f2;
+    color: #4a4a4a;
+    background-color: #f3f7fa;
     top: 0;
     position: relative;
     margin: -1px 0 0 0;
     padding: 0;
-    border-top: 1px solid transparent;
-    overflow-x: hidden
+    font-family: 'Open Sans', sans-serif;
+    border-top: 1px solid transparent
 }
 input, textarea {
     -webkit-appearance: none
-}
-input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0 50px #fff;
-    -webkit-text-fill-color: #000
 }
 button:focus, textarea:focus, input:focus, a:focus {
     outline: 0

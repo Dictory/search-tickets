@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Button.css';
+import './Button.css';
 
 const Button = ({ price }) => (
-  <button className={styles.box}>
+  <button styleName="box">
     Купить за { price.toLocaleString() } ₽
   </button>
 );

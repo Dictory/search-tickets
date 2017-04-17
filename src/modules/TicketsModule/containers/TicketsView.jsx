@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import load from '../actions/load';
 import TicketsList from '../components/TicketsList';
 import Filters from './Filters';
-import styles from '../components/TicketsList.css';
+import '../components/TicketsList.css';
 
 class TicketsView extends Component {
   componentDidMount() {
@@ -12,7 +12,7 @@ class TicketsView extends Component {
   render() {
     const { ticketsStore } = this.props;
     return (
-      <div className={styles.box}>
+      <div styleName="box">
         <Filters />
         <TicketsList
           tickets={ticketsStore.get('items')}

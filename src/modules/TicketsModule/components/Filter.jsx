@@ -1,7 +1,7 @@
 import React from 'react';
 import map from 'lodash/map';
 import FilterItem from './FilterItem';
-import styles from './Filter.css';
+import './Filter.css';
 import inFilter from '../actions/inFilter';
 import { CLEAR_VALUE } from '../constants';
 
@@ -19,10 +19,10 @@ const Filter = ({ items, filter, handleToggle, handleOnly }) => {
     handleOnly={handleOnly}
   />);
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.box}>
-        <div className={styles.title}>Количество пересадок</div>
-        <div className={styles.list}>{list}</div>
+    <div styleName="wrapper">
+      <div styleName="box">
+        <div styleName="title">Количество пересадок</div>
+        <div styleName="list">{list}</div>
       </div>
     </div>
   );

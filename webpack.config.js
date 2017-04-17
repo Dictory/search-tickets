@@ -20,6 +20,11 @@ const plugins = [
     },
   }),
   new ExtractTextPlugin(cssName),
+  new webpack.LoaderOptionsPlugin({
+    options: {
+      context: __dirname,
+    },
+  }),
 ];
 
 if (productionBuild) {
@@ -53,17 +58,30 @@ module.exports = {
       {
         test   : /\.(js|jsx)$/,
         exclude: [/node_modules/],
-        loader : productionBuild ? 'babel-loader' : 'react-hot-loader!babel-loader',
+        use    : {
+          loader : 'babel-loader',
+          options: {
+            plugins: [
+              'transform-decorators-legacy',
+              'react-css-modules',
+            ],
+          },
+        }
       },
       {
         test   : /\.css$/,
         exclude: /node_modules/,
-        loader : ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: [
-            { loader: 'css-loader', query: { modules: true, sourceMaps: true } },
-            'postcss-loader'
-          ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use     : [{
+            loader : 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: '[path]___[name]__[local]___[hash:base64:5]'
+            }
+          },
+          { loader: 'postcss-loader' }]
         })
       },
       { test: /\.(jpg|gif|png|woff|woff2|eot|ttf|svg)$/, use: 'url-loader?limit=100000' },

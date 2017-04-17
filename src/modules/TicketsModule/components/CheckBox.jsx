@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './CheckBox.css';
+import './CheckBox.css';
 
 const CheckBox = ({ checked, onChange }) => (
-  <div className={styles.box}>
+  <div styleName="box">
     <input type="checkbox" value="None" name="check" checked={checked} onChange={onChange} />
-    <div className={styles.label} />
+    <div styleName="label" />
   </div>
 );
 
